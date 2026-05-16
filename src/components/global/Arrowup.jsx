@@ -45,7 +45,7 @@ const Arrowup = () => {
         scale: show ? 1 : 0,
       }}
       transition={{ duration: 0.3 }}
-      className="fixed right-10 bottom-10 lg:right-20 lg:bottom-20 z-50"
+      className="fixed right-10 bottom-10 z-50 lg:right-20 lg:bottom-20"
     >
       <div className="relative flex items-center justify-center">
         {/* Progress Circle */}
@@ -81,6 +81,7 @@ const Arrowup = () => {
 
         {/* Button */}
         <button
+          aria-label="scroll to top"
           onClick={scrollTop}
           className="bg-darkblack inline-flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-white shadow-lg"
         >
