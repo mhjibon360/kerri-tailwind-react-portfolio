@@ -58,6 +58,7 @@ const Contact = () => {
           </div>
           <div className="text-end">
             <button
+              aria-label="submit form button"
               type="submit"
               className="bg-primary cursor-pointer rounded-md px-8 py-4 text-sm font-normal text-white uppercase"
             >

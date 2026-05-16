@@ -43,27 +43,47 @@ const Work = () => {
 
         <ul className="flex flex-wrap items-center justify-center gap-4 md:flex-nowrap">
           <li>
-            <button className="work-btn" onClick={() => setActive("all")}>
+            <button
+              aria-label="work filter"
+              className="work-btn"
+              onClick={() => setActive("all")}
+            >
               all
             </button>
           </li>
           <li>
-            <button className="work-btn" onClick={() => setActive("seo")}>
+            <button
+              aria-label="work filter"
+              className="work-btn"
+              onClick={() => setActive("seo")}
+            >
               seo
             </button>
           </li>
           <li>
-            <button className="work-btn" onClick={() => setActive("webdesign")}>
+            <button
+              aria-label="work filter"
+              className="work-btn"
+              onClick={() => setActive("webdesign")}
+            >
               webdesign
             </button>
           </li>
           <li>
-            <button className="work-btn" onClick={() => setActive("work")}>
+            <button
+              aria-label="work filter"
+              className="work-btn"
+              onClick={() => setActive("work")}
+            >
               work
             </button>
           </li>
           <li>
-            <button className="work-btn" onClick={() => setActive("wordpress")}>
+            <button
+              aria-label="work filter"
+              className="work-btn"
+              onClick={() => setActive("wordpress")}
+            >
               wordpress
             </button>
           </li>
