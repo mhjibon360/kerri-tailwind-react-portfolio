@@ -49,22 +49,46 @@ const About = () => {
             </p>
             <ul className="flex items-center gap-4">
               <li>
-                <a href="#" rel="noopener noreferrer" className="social-link">
+                <a
+                  href="https://www.dribble.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Dribbble profile"
+                  className="social-link"
+                >
                   <FaDribbble />
                 </a>
               </li>
               <li>
-                <a href="#" rel="noopener noreferrer" className="social-link">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook profile"
+                  className="social-link"
+                >
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href="#" rel="noopener noreferrer" className="social-link">
+                <a
+                  href="https://www.dribble.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="dribble profile"
+                  className="social-link"
+                >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li>
-                <a href="#" rel="noopener noreferrer" className="social-link">
+                <a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter profile"
+                  className="social-link"
+                >
                   <FaTwitter />
                 </a>
               </li>

@@ -10,22 +10,46 @@ const Footer = () => {
       <div className="container">
         <ul className="flex items-center justify-center gap-4">
           <li>
-            <a href="#" rel="noopener noreferrer" className="footer-social">
+            <a
+              href="https://www.dribble.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble profile"
+              className="footer-social"
+            >
               <FaDribbble />
             </a>
           </li>
           <li>
-            <a href="#" rel="noopener noreferrer" className="footer-social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook profile"
+              className="footer-social"
+            >
               <FaFacebookF />
             </a>
           </li>
           <li>
-            <a href="#" rel="noopener noreferrer" className="footer-social">
+            <a
+              href="https://www.linkdin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="linkdin profile"
+              className="footer-social"
+            >
               <FaLinkedinIn />
             </a>
           </li>
           <li>
-            <a href="#" rel="noopener noreferrer" className="footer-social">
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="twitter profile"
+              className="footer-social"
+            >
               <FaTwitter />
             </a>
           </li>

@@ -47,7 +47,12 @@ const Hero = () => {
             established fact looking at its layout.
           </p>
           <div className="mt-6">
-            <a href="#" className="btn" rel="noopener noreferrer">
+            <a
+              href="#"
+              aria-label="download my cv"
+              className="btn"
+              rel="noopener noreferrer"
+            >
               download cv
             </a>
           </div>
