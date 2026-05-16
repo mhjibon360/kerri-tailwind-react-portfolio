@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #FFFFFF;
+  --color-primary: #e65f78;
+  --color-darkblack: #212529;
+  --color-darklight: #212121;
+  --color-lightwhite: #f8f9fa;
+  --color-dark2: #ababab;
+  --color-bordercolor: rgba(241, 241, 241, 0.08);
+
+  /* google fonts */
+  --font-nunito: "Nunito", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply font-nunito bg-white text-darkblack dark:bg-darkblack dark:text-white
+  }
+}
+
+@layer components {
+  .container {
+    @apply container mx-auto px-8 md:px-0;
+  }
+}
+
+@layer utilities {
+  .header {
+    @apply dark:bg-darkblack fixed top-0 left-0 z-50 w-full shadow-sm transition-all duration-300
+  }
+
+  .nav-link {
+    @apply hover:text-primary text-[15px] font-normal tracking-wide capitalize transition-all duration-500 dark:text-white cursor-pointer;
+  }
+
+  .theme-mode {
+    @apply hover:text-primary text-2xl font-normal tracking-wide capitalize transition-all duration-500 dark:text-white cursor-pointer;
+  }
+
+  .active {
+    @apply text-primary;
+  }
+
+  .btn {
+    @apply hover:text-darkblack rounded-full border border-white px-7 py-4 text-base font-medium uppercase transition-all duration-500 hover:bg-white;
+  }
+
+  .social-link {
+    @apply text-darkblack hover:border-primary hover:text-primary inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-gray-300 text-lg transition-all duration-500 dark:text-white;
+  }
+
+  .work-btn {
+    @apply hover:bg-primary hover:text-white duration-500 transition-all cursor-pointer rounded-full px-4 py-1.5 text-sm font-normal text-darkblack uppercase
+  }
+
+  .work-overly {
+    @apply bg-darkblack/0 group-hover:bg-darkblack/90 absolute top-0 left-0 h-full w-full rounded-sm transition-all duration-300
+  }
+
+  .work-overly-content {
+    @apply absolute top-[150%] left-[50%] translate-x-[-50%] text-center transition-all duration-500 group-hover:top-[50%]
+  }
+
+  .form-control {
+    @apply focus:border-primary w-full rounded-md border-2 border-slate-300 px-5 py-3 placeholder:text-sm focus:outline-0
+  }
+
+  .footer-social {
+    @apply hover:border-primary hover:text-primary bg-bordercolor text-dark2 inline-flex h-12 w-12 items-center justify-center rounded-full text-lg transition-all duration-500 dark:text-white
+  }
+
+  .arrow-up {
+    @apply bg-darkblack border-primary fixed right-20 bottom-20 inline-flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-4 text-white shadow-lg shadow-darkblack/20 z-50
+  }
+}
+
+
+/* hero  */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/hero-bg.webp);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* hero  */
+.details-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/hero-bg.webp);
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
