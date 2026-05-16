@@ -9,9 +9,8 @@ const Hire = () => {
         </h2>
         <div className="mt-8">
           <a
-            href="#"
-            rel="noopener noreferrer"
-            className="bg-primary rounded-md px-8 py-4 text-sm font-normal text-white uppercase"
+            href="#contact"
+            className="bg-primary rounded-md px-8 py-4 text-base font-normal text-white uppercase"
           >
             hire me
           </a>
